@@ -1,7 +1,7 @@
 // associa la var genera al btn genera
 var genera = document.getElementById("btn_genera");
 
-// al click esegue il codice indiato in function ()
+// GENERA - al click esegue il codice indiato in function ()
 genera.addEventListener ("click",
   function() {
     // Prendo il nome inserito
@@ -46,13 +46,12 @@ genera.addEventListener ("click",
   }
 )
 
-
-// Annulla
-
-var annulla = document.getElementById('annulla');
+// ANNULLA - al click cancella i dettagli del biglietto e resetta gli input
+var annulla = document.getElementById('btn_annulla');
 annulla.addEventListener ("click",
   function () {
-    document.getElementById('nome_biglietto').classList.remove("show");
+    // fa scomparire i dettagli del biglietto
+    document.getElementById('tkt_det').classList.remove("show");
     // resettare i campi dati_input
     document.getElementById('nome').value = "";
     document.getElementById('km').value = "";
