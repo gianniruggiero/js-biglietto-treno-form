@@ -42,7 +42,7 @@ genera.addEventListener ("click",
     document.getElementById("offerta").innerHTML = offerta;
     document.getElementById("carrozza").innerHTML = numCarrozza;
     document.getElementById("codice_cp").innerHTML = "9" + codiceCP;
-    // document.getElementById("biglietto_container").classList.add("show");
+    document.getElementById("tkt_det").classList.add("show");
   }
 )
 

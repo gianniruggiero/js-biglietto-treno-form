@@ -108,7 +108,7 @@ H3 {
   background-color: #fff;
   padding: 20px;
   margin: auto;
-  /* display: none; */
+  display: none;
 }
 
 .tkt_info_wrap {
@@ -131,4 +131,8 @@ table {
   padding: 20px;
   background-color: darkgrey;
   flex-shrink: 0;
+}
+
+.show {
+  display: block;
 }
