@@ -8,3 +8,53 @@ body {
   background-color: #B91450;
   font-family: 'Roboto', sans-serif;
 }
+
+h2 {
+  margin: 20px;
+  font-size: 30px;
+  color: #fff;
+}
+
+.wrapper_gen {
+  width: 1280px;
+  margin: auto;
+  text-align: center;
+}
+
+.tkt_input {
+  width: 100%;
+  height: 300px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px grey;
+  padding: 20px;
+}
+
+.input_line {
+  display: flex;
+  justify-content: center;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 20px;
+}
+
+.input_line label {
+  color: #B91450;
+  margin-bottom: 15px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.input_line input, .input_line select {
+  height: 30px;
+  border: 1px solid #B91450;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.input_line input::placeholder {
+  text-align: center;
+}

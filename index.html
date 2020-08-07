@@ -10,7 +10,48 @@
     <title>Biglietto Treno Form</title>
   </head>
   <body>
+    <div class="wrapper_gen">
+      <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+      <!-- zona input info per generare biglietto      -->
+      <div class="tkt_input">
+        <!-- input line 1 -->
+        <div class="input_line">
+          <!-- input nome e cognome -->
+          <div class="col">
+            <label for="nome">Nome e Cognome</label>
+            <input type="text" name="nome" value="" placeholder="Inserisci il tuo nome">
+          </div>
+          <!-- /input nome e cognome -->
+          <!-- input km -->
+          <div class="col">
+            <label for="km">Km da percorrere</label>
+            <input type="number" name="km" value="" placeholder="Inserisci i km" min="0">
+          </div>
+          <!-- /input km -->
+          <!-- input fascia d'eta -->
+          <div class="col">
+            <label for="fascia">Fascia d'età</label>
+            <select id="fascia_eta"class="" name="fascia">
+              <option value="minorenne">Minorenne</option>
+              <option value="maggiorenne">Maggiorenne</option>
+              <option value="over65">Over 65</option>
+            </select>
+          </div>
+          <!-- /input fascia d'eta -->
+        </div>
+        <!-- input line 1 -->
+      </div>
+      <!-- /sezione input info per generare biglietto      -->
 
+
+
+      <h2>IL TUO BIGLIETTO</h2>
+      <!-- sezione dettagli biglietto  -->
+      <div class="tkt_details">
+
+      </div>
+      <!-- /sezione dettagli biglietto  -->
+    </div>
     <script src="js/script.js" charset="utf-8"></script>
   </body>
 </html>
