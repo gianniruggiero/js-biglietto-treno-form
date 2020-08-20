@@ -103,12 +103,22 @@ H3 {
   text-align: left;
 }
 
+@keyframes opacizza {
+  0% {opacity: 0}
+  100% {opacity: 1}
+}
+
+@keyframes opacizza_reverse {
+  0% {opacity: 1}
+  100% {opacity: 0}
+}
+
 .tkt_details {
   width: calc(100% - 5%);
   background-color: #fff;
   padding: 20px;
   margin: auto;
-  display: none;
+  opacity: 0;
 }
 
 .tkt_info_wrap {
@@ -131,8 +141,17 @@ table {
   padding: 20px;
   background-color: darkgrey;
   flex-shrink: 0;
+  max-width: 300px;
 }
 
 .show {
-  display: block;
+  opacity: 1;
+}
+
+.click_genera_anim {
+  animation: opacizza 1s;
+}
+
+.click_annulla_anim {
+  animation: opacizza_reverse 1s;
 }
